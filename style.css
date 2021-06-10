@@ -2,7 +2,7 @@ body{
     background-color: hsl(233, 47%, 7%);
 }
 
-main{
+section{
     background-color: #1B1938;
     width: 1080px;
     height: 446px;
@@ -10,6 +10,7 @@ main{
     display: flex;
     justify-content: center;
     border-radius: 10px;
+
 }
 
 .informacoes{
@@ -55,9 +56,6 @@ p{
     font-weight: 400;
 }
 
-ul{
-    
-}
 ul li{
     list-style-type:none;
     text-transform: uppercase;
@@ -76,4 +74,64 @@ ul li:last-child{
     font-weight: 200;
     font-size: 12px;
     color:#A6A4BB;
+}
+
+@media(max-width:768px){
+    
+    section{
+        display: grid;
+        background-color: #1B1938;
+        width: 540px;
+        height: 1180px;
+        margin: 50px auto;
+        border-radius: 10px;
+    }
+    .imagem{
+        opacity: 35%;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+        border-bottom-left-radius: 0px ;
+        border-bottom-right-radius: 0px ;
+    }
+    .lado-direito{
+        order: 1;
+        top: 60px;
+        height: 446px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px ;
+        border-bottom-right-radius: 0px ;
+    }
+    .lado-esquerdo{
+        order: 2;
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 46px;
+        text-align: center;
+    }
+    p{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .informacoes{
+        display: inline;
+    }
+    li{  
+        text-align: center;
+    }
+
+
+    ul li:first-child{
+        font-size: 32px;
+    }
+    ul li:last-child{
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+       
 }
